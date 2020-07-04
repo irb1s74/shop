@@ -291,7 +291,7 @@ footer {
 @media (max-width:800px) {
     .line {
         height: auto;
-        width: 370px;
+        max-width: 370px;
         display: flex;
         flex-direction: column;
         margin-bottom: 10px;
@@ -300,6 +300,14 @@ footer {
 }
 
 @media (max-width:400px) {
+    .list {
+        padding: 5px;
+    }
+
+    .sig {
+        padding: 5px;
+    }
+
     .slid {
         max-width: 340px;
     }
