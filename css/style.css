@@ -18,7 +18,7 @@ header {
     height: 100px;
 }
 
-nav {
+.nav {
     height: 100px;
     margin-right: 15px;
     display: flex;
@@ -34,18 +34,6 @@ nav {
     margin-left: 20px;
 }
 
-.list {
-    display: flex;
-    align-items: center;
-    padding-right: 50px;
-}
-
-.sig {
-    display: flex;
-    align-items: center;
-    padding-right: 20px;
-}
-
 .nav i {
     padding-right: 10px;
 }
@@ -55,43 +43,106 @@ nav {
     transition: .5s;
 }
 
-.list:hover {
-    color: #fff;
-    transition: .5s;
-}
-
-.sig:hover {
-    color: #fff;
-    transition: .5s;
-}
-
 .slid {
     height: 700px;
     max-width: 1500px;
     margin-top: 50px;
-    background-image: url(../img/slid/slid.jpg);
-    background-size: cover;
-    background-position: center;
     border-radius: 5px;
     box-shadow: 0 3px 10px black;
 }
 
+.slid img {
+    width: 100%;
+    height: 700px;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide {
+    display: none;
+}
+
+.slid_wraper {
+    position: relative;
+}
+
+.slide.active {
+    display: block;
+}
+
+.dots_wraper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 200px ;
+}
+.next {
+    display: none;
+    opacity: 0.1;
+    transition: .5s;
+    position: absolute;   
+    border-radius:100% 0% 0% 100% / 50% 100% 0% 50%  ;
+    z-index: 1; 
+    top: 0;
+    right: 0;
+    background-color: black;
+    color: black;
+    width: 80px;
+    height: 100%;
+}
+.next:hover{
+    opacity: 0.6;
+}
+.prev {
+    display: none;
+    opacity: 0.1;
+    transition: .5s;
+    position: absolute;
+    border-radius: 0% 100% 100% 0% / 0% 50% 50% 100% ;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: black;
+    width: 80px;
+    height:100%;
+}
+.prev:hover{
+    opacity: 0.6;
+}
+.dot {
+    background-color: grey;
+    color: grey;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+.dot.activ{
+    background-color: black;
+    color: black;
+}
+
 .ar {
+    position: absolute;
     color: #fff;
     font-size: 50px;
-    padding: 20px;
+    padding: 50px;
+    padding-left: 65px;
+    z-index: 1;
 }
 
 .knp {
+    z-index: 1;
+    position: absolute;
     border: none;
     border-radius: 25px;
-    padding: 30px;
-    margin: 20px;
+    padding: 35px;
     background-color: grey;
     text-transform: uppercase;
     font-size: 15px;
-    margin-top: 450px;
-    margin-left: 50px;
+    margin-top: 560px;
+    margin-left: 70px;
     transition: .5s;
 }
 
@@ -128,6 +179,7 @@ nav {
     max-height: 600px;
     width: auto;
     height: auto;
+    object-fit: cover;
 }
 
 .tvr {
@@ -149,7 +201,7 @@ nav {
 
 .iteam {
     background-color: #ececec;
-    height: 450px;
+    height: 460px;
     width: 350px;
     text-align: center;
     display: flex;
@@ -178,9 +230,11 @@ nav {
 }
 
 .iteam img {
-    padding: 20px;
+    margin: 20px;
     width: 300px;
     height: 300px;
+    box-shadow: 4px 4px 4px 4px whitesmoke;
+    object-fit: cover;
 }
 
 .iteam p {
@@ -248,7 +302,7 @@ footer {
 
 /* -------
     MEDIA 
----------*/
+-----------*/
 @media (max-width:1450px) {
     .now {
         padding-top: 50px;
@@ -302,13 +356,6 @@ footer {
 }
 
 @media (max-width:400px) {
-    .list {
-        padding: 5px;
-    }
-
-    .sig {
-        padding: 5px;
-    }
 
     .slid {
         max-width: 340px;
@@ -325,8 +372,8 @@ footer {
     }
 
     .iteam img {
-        width: 230px;
-        height: 240px;
+        width: 205px;
+        height: 200px;
     }
 
     .line {
