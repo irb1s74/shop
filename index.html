@@ -9,6 +9,7 @@
     <link href="css/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>Магазин</title>
 </head>
 
@@ -17,14 +18,38 @@
     <header>
         <nav class="nav">
             <div class="logo wow animate__bounce">Shop</div>
-            <div class="list"><i class="fas fa-shopping-cart"></i>list</div>
-            <div class="sig"><i class="fas fa-user-alt"></i>sig in</div>
+            <div class="burger">
+                <span></span>
+            </div>
+            <nav class="hed_nav">
+                <ul class="hed_list">
+                    <li class="hed_link">Главная</li>
+                </ul>
+                <ul class="hed_list">
+                    <li class="hed_link">Товары</li>
+                </ul>
+                <ul class="hed_list">
+                    <li class="hed_link">О нас</li>
+                </ul>
+            </nav>
         </nav>
     </header>
     <main>
         <div class="slid">
             <p class="ar">AIR JORDAN</p>
             <button class="knp">Купить</button>
+            <div class="slid_wraper">
+                <div class="slide active"><img src="img/slid/slid.jpg" alt=""></div>
+                <div class="slide"><img src="img/slid/slid2.jpg" alt=""></div>
+                <div class="slide"><img src="img/slid/slid3.jpg" alt=""></div>
+                <span class="next"></span>
+                <span class="prev"></span>
+            </div>
+        </div>
+        <div class="dots_wraper">
+            <span class="dot activ"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
         <p class="now">Сейчас в тренде</p>
         <div class="trend">
