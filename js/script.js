@@ -15,6 +15,12 @@ let omg = anime({
     ]
 });
 
+$('.menu-btn').on('click', function(e) {
+    e.preventDefault;
+    $(this).toggleClass('menu-btn_active');
+    $(".hed_nav").toggleClass('hed_nav_active');
+  });
+
 document.querySelector('.fa-vk').addEventListener("click", function () {
     document.location.href = "https://vk.com/iiimya";
 })
@@ -30,7 +36,6 @@ const
 let index = 0;
 
 const actvslide = n => {
-    console.log(n);
     for (slide of slides) {
         slide.classList.remove("active");
     }
