@@ -9,31 +9,29 @@
     <link href="css/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>Магазин</title>
 </head>
 
 <body>
-
     <header>
         <nav class="nav">
             <div class="logo wow animate__bounce">Shop</div>
-            <div class="burger">
-                <span></span>
+            <div class="hed_nav ">
+                <ul class="hed_list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#tovar">Товары</a></li>
+                    <li><a href="#kontakt">Контакты</a></li>
+                </ul>
             </div>
-            <nav class="hed_nav">
-                <ul class="hed_list">
-                    <li class="hed_link">Главная</li>
-                </ul>
-                <ul class="hed_list">
-                    <li class="hed_link">Товары</li>
-                </ul>
-                <ul class="hed_list">
-                    <li class="hed_link">О нас</li>
-                </ul>
-            </nav>
+            <div class="menu">
+                <a href="#" class="menu-btn">
+                    <span></span>
+                </a>
+            </div>
         </nav>
     </header>
+
+    <div class="navBurger" role="navigation" id="navToggle"></div>
     <main>
         <div class="slid">
             <p class="ar">AIR JORDAN</p>
@@ -63,7 +61,7 @@
                 <p class="arrs">AIR JORDAN S</p>
             </div>
         </div>
-        <div class="tovar wow animate__fadeInUp">
+        <div id="tovar" class="tovar wow animate__fadeInUp">
             <p class="tvr">Товары</p>
             <div class="line">
                 <div class="iteam">
@@ -151,7 +149,7 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer id="kontakt">
         <div class="kontakt">
             <p>kolyirb1s@gmail.com</p>
             <div class="social">
@@ -160,10 +158,11 @@
             </div>
         </div>
     </footer>
-    <script src="js/anime.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/script.js"></script>
-    <style type="text/css"> #hellopreloader>p { display: none; } #hellopreloader_preload { display: block; position: fixed; z-index: 99999; top: 0; left: 0; width: 100%; height: 100%; min-width: 200px; background: #2e2e30 url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat; background-size: 144px; background-position: center; } </style> <div id="hellopreloader"> <div id="hellopreloader_preload"></div> <p><a href="http://hello-site.ru"></a></p> </div> <script type="text/javascript"> var hellopreloader = document.getElementById("hellopreloader_preload"); function fadeOutnojquery(el) { el.style.opacity = 1; var interhellopreloader = setInterval(function () { el.style.opacity = el.style.opacity - 0.05; if (el.style.opacity <= 0.05) { clearInterval(interhellopreloader); hellopreloader.style.display = "none"; } }, 16); } window.onload = function () { setTimeout(function () { fadeOutnojquery(hellopreloader); }, 1000); }; </script>
+   
 </body>
-
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/script.js"></script>
+<style type="text/css"> #hellopreloader>p { display: none; } #hellopreloader_preload { display: block; position: fixed; z-index: 99999; top: 0; left: 0; width: 100%; height: 100%; min-width: 200px; background: #2e2e30 url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat; background-size: 144px; background-position: center; } </style> <div id="hellopreloader"> <div id="hellopreloader_preload"></div> <p><a href="http://hello-site.ru"></a></p> </div> <script type="text/javascript"> var hellopreloader = document.getElementById("hellopreloader_preload"); function fadeOutnojquery(el) { el.style.opacity = 1; var interhellopreloader = setInterval(function () { el.style.opacity = el.style.opacity - 0.05; if (el.style.opacity <= 0.05) { clearInterval(interhellopreloader); hellopreloader.style.display = "none"; } }, 16); } window.onload = function () { setTimeout(function () { fadeOutnojquery(hellopreloader); }, 1000); }; </script>
 </html>
