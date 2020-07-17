@@ -16,7 +16,8 @@ header {
     width: 100%;
     max-height: 100px;
 }
-.header_fixed{
+
+.header_fixed {
     position: fixed;
     top: 0;
     left: 0;
@@ -29,12 +30,13 @@ header {
     max-height: 90px;
 }
 
-@keyframes show_header{
-    0%{
+@keyframes show_header {
+    0% {
         opacity: 0;
         top: -70px;
     }
-    100%{
+
+    100% {
         opacity: 1;
         top: 0;
     }
@@ -47,19 +49,17 @@ header {
     background-color: #fff;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
-    transition: 0.3s;
+    transition: 0.4s;
     transform-origin: right center;
-    transform:  translateX(100%);
     opacity: 0;
 }
 
 .hed_nav_active {
-    transform: translateX(0%);
     opacity: 1;
 }
 
 .hed_list {
-    align-items: center ;
+    align-items: center;
     display: flex;
     line-height: 50px;
 }
@@ -175,6 +175,18 @@ header {
     z-index: -1;
     object-fit: cover;
     object-position: center;
+    animation-name: show_img;
+    animation-duration: 1s;
+}
+
+@keyframes show_img {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .slide {
@@ -299,7 +311,7 @@ header {
 .trend img {
     padding-right: 15px;
     max-width: 400px;
-    max-height: 500px;  
+    max-height: 500px;
     object-fit: cover;
 }
 
