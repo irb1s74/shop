@@ -269,8 +269,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1100px;
-    width: auto;
+    max-width: 1300px;
     height: 700px;
 }
 
@@ -280,10 +279,8 @@ header {
 
 .trend img {
     padding-right: 15px;
-    max-width: 500px;
-    max-height: 600px;
-    width: auto;
-    height: auto;
+    max-width: 400px;
+    max-height: 500px;  
     object-fit: cover;
 }
 
@@ -291,26 +288,27 @@ header {
     font-size: 35px;
     max-width: 150px;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 10px;
+    margin-top: 100px;
+    margin-bottom: 10px;
 }
 
 .line {
-    padding-top: 80px;
+    margin-top: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1600px;
+    max-width: 1400px;
     height: auto;
 }
 
 .iteam {
     background-color: #ececec;
-    height: 460px;
-    width: 350px;
+    height: 360px;
+    width: 280px;
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     border-radius: 10px;
     transition: .5s;
 }
@@ -336,8 +334,8 @@ header {
 
 .iteam img {
     margin: 20px;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     box-shadow: 4px 4px 4px 4px whitesmoke;
     object-fit: cover;
 }
