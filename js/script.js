@@ -15,11 +15,11 @@ let omg = anime({
     ]
 });
 
-$('.menu-btn').on('click', function(e) {
+$('.menu-btn').on('click', function (e) {
     e.preventDefault;
     $(this).toggleClass('menu-btn_active');
     $(".hed_nav").toggleClass('hed_nav_active');
-  });
+});
 
 document.querySelector('.fa-vk').addEventListener("click", function () {
     document.location.href = "https://vk.com/iiimya";
@@ -27,6 +27,16 @@ document.querySelector('.fa-vk').addEventListener("click", function () {
 document.querySelector('.fa-instagram').addEventListener("click", function () {
     document.location.href = "https://www.instagram.com/_i.r.b.1.s_/";
 })
+
+window.onscroll = function showheader() {
+    var header = document.querySelector(".header")
+    if (window.pageYOffset > 200) {
+        header.classList.add("header_fixed");
+    }
+    else{
+        header.classList.remove("header_fixed")
+    }
+}
 const
     next = document.querySelector(".next"),
     prev = document.querySelector(".prev"),
@@ -81,4 +91,4 @@ dots.forEach((iteam, indexDot) => {
 next.addEventListener("click", nextslide);
 prev.addEventListener("click", prevslide);
 
-const intr= setInterval(nextslide,4500);
+const intr = setInterval(nextslide, 4500);
