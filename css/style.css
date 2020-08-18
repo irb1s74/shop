@@ -353,8 +353,29 @@ header {
     transition: .5s;
 }
 
+
+.iteam h2 {
+    font-size: 15px;
+    color: black;
+    height: 20px;
+    width: 60px;
+    background-color: #fff;
+    transition: .3s;
+}
+
+.iteam img {
+    margin: 20px 20px 20px 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.iteam p {
+    margin-top: 20px;
+}
+
 .iteam:hover {
-    box-shadow: 0px 3px 10px black;
     background-color: black;
     color: white;
 }
@@ -373,27 +394,7 @@ header {
     margin: 60px 20px 20px 20px;
 }
 
-.iteam h2 {
-    font-size: 15px;
-    color: black;
-    height: 20px;
-    width: 60px;
-    background-color: #fff;
-    transition: .3s;
-}
 
-.iteam img {
-    margin: 20px 20px 20px 20px;
-    width: 200px;
-    height: 200px;
-    box-shadow: 4px 4px 4px 4px whitesmoke;
-    object-fit: cover;
-    transition: .3s;
-}
-
-.iteam p {
-    margin-top: 20px;
-}
 
 footer {
     margin-top: 100px;
