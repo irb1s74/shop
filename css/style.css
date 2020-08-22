@@ -91,7 +91,8 @@ header {
     font-size: 20px;
     text-transform: uppercase;
 }
-.logo{
+
+.logo {
     color: green;
 }
 
@@ -163,7 +164,7 @@ header {
 .slid {
     height: 700px;
     max-width: 1500px;
-    margin-top: 150px;
+    margin-top: 50px;
     border-radius: 5px;
     box-shadow: 0 3px 10px black;
 }
@@ -181,7 +182,7 @@ header {
 
 @keyframes show_img {
     0% {
-        opacity: 0.7;
+        opacity: 0.4;
     }
 
     100% {
@@ -315,6 +316,29 @@ header {
     object-fit: cover;
 }
 
+.tovar {
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left_str {
+    margin-right: 50px;
+}
+.right_str{
+    margin-left: 50px;
+}
+.tovar_odin{
+    display: inline;
+    animation-name: show_img;
+    animation-duration: 1s;
+}
+.tovar_dva {
+    display: none;
+    animation-name: show_img;
+    animation-duration: 1s;
+}
+
 .tvr {
     font-size: 35px;
     max-width: 150px;
@@ -328,8 +352,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1400px;
+    width: 1300px;
     height: auto;
+}
+.line.two{
+    margin-top:25px
 }
 
 .iteam {
