@@ -317,22 +317,19 @@ header {
 }
 
 .tovar {
-    width: 1300px;
+    max-width: 1440px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
-.left_str {
-    margin-right: 50px;
-}
-.right_str{
-    margin-left: 50px;
-}
-.tovar_odin{
+
+.tovar_odin {
     display: inline;
     animation-name: show_img;
     animation-duration: 1s;
 }
+
 .tovar_dva {
     display: none;
     animation-name: show_img;
@@ -355,8 +352,9 @@ header {
     width: 1300px;
     height: auto;
 }
-.line.two{
-    margin-top:25px
+
+.line.two {
+    margin-top: 25px
 }
 
 .iteam {
@@ -502,9 +500,24 @@ footer {
         padding: 0;
         height: 800px;
     }
+    .tovar{
+        max-width:1200px;
+    }
 
     .tvr {
         padding-top: 50px;
+    }
+    .tovar{
+        display: grid;
+    }
+    .tovar_dva{
+        display: inline;
+    }
+    .right_str{
+        display: none;
+    }
+    .left_str{
+        display: none;
     }
 
 }
@@ -515,16 +528,22 @@ footer {
         height: 1400px;
     }
 
-    .line {
-        height: 900px;
+    .tovar{
         display: grid;
-        grid-template-columns: 400px 400px;
-        margin-bottom: 110px;
+
+    }
+    .line {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        margin-bottom: 40px;
+    }
+    .iteam{ 
+        margin-bottom: 10px;
+    }
+    .tovar_dva{
+        display: inline;
     }
 
-    .iteam {
-        margin-bottom: 20px;
-    }
 }
 
 @media (max-width:800px) {
@@ -568,6 +587,14 @@ footer {
         height: 360px;
         width: 250px;
     }
+    .left_str{
+        display: none;
+        margin: 0;
+    }
+    .right_str{
+        display: none;
+        margin: 0;
+    }
 
     .iteam h2 {
         font-size: 14px;
@@ -581,6 +608,13 @@ footer {
 
     .line {
         padding-top: 20px;
+    }
+    .tovar{
+        display: flex;
+        flex-direction: column;
+    }
+    .tovar_dva{
+        display: inline;
     }
 
     .trend div {
