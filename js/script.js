@@ -7,12 +7,10 @@ let omg = anime({
     loop: true,
     easing: 'easeInOutQuad',
     keyframes: [{
-            color: "#0f82eb"
-        },
-        {
-            color: "#fc08e8"
-        }
-    ]
+        color: "#0f82eb"
+    }, {
+        color: "#fc08e8"
+    }]
 });
 
 $('.menu-btn').on('click', function (e) {
@@ -32,11 +30,11 @@ window.onscroll = function showheader() {
     var header = document.querySelector(".header")
     if (window.pageYOffset > 0) {
         header.classList.add("header_fixed");
-    }
-    else{
+    } else {
         header.classList.remove("header_fixed");
     }
 }
+//слайдер
 const
     next = document.querySelector(".next"),
     prev = document.querySelector(".prev"),
@@ -92,3 +90,19 @@ next.addEventListener("click", nextslide);
 prev.addEventListener("click", prevslide);
 
 const intr = setInterval(nextslide, 4500);
+
+//слайдер товаров
+const 
+    str_left = document.querySelector(".left_str"),
+    str_right = document.querySelector(".right_str"),
+    tovar_odin = document.querySelector(".tovar_odin"),
+    tovar_dva = document.querySelector(".tovar_dva");
+
+str_right.addEventListener("click", function(){
+    tovar_dva.style.display = "inline"
+    tovar_odin.style.display = "none"
+})
+str_left.addEventListener("click", function () {
+    tovar_dva.style.display = "none"
+    tovar_odin.style.display = "inline"
+})
